@@ -1,0 +1,13 @@
+
+  <form  class="contact100-form" accept-charset="UTF-8" ng-submit="bucketCtrl.createBucket()">
+    <div class="form-group">
+      <label for="accesskey" style="font-weight: bold;">Bucket Name:</label>
+      <input type="text" class="form-control" ng-model="bucketCtrl.bucket">
+    </div>
+    <div class="actions">
+      <button class="contact100-form-btn has-spinner" ng-disabled="loadingService.isLoading()" ng-class="{'active': loadingService.isLoading()}">
+        <span class="spinner"><i class="fa fa-refresh fa-spin"></i></span>
+        Create
+      </button>
+    </div>
+  </form>
